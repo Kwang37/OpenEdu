@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenEdu - 成立于美国本土的名校咨询团队</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .bg-gradient-blue { background: linear-gradient(180deg, #E6F0FF 0%, #FFFFFF 100%); }
+        .hero-gradient { background: linear-gradient(rgba(0, 122, 255, 0.1), rgba(0, 122, 255, 0.05)), url('https://images.unsplash.com/photo-1501446529957-6226bd447c46?auto=format&fit=crop&q=80&w=2000'); background-size: cover; background-position: center; }
+        .card-shadow { box-shadow: 0 10px 30px -5px rgba(0, 122, 255, 0.1); }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+    <!-- Header / Navbar -->
+    <nav class="fixed w-full z-50 glass border-b border-blue-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-2xl font-bold text-blue-600 tracking-tight">OpenEdu</span>
+                <span class="text-xs text-blue-400 uppercase tracking-widest">Open Ivy. Open Offer</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#" class="hover:text-blue-600">首页</a>
+                <a href="#services" class="hover:text-blue-600">一站式服务</a>
+                <a href="#products" class="hover:text-blue-600">明星产品</a>
+                <a href="#" class="text-blue-600 font-bold border-b-2 border-blue-600">关于我们</a>
+            </div>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">在线咨询</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[80vh] flex items-center justify-center pt-20 hero-gradient">
+        <div class="text-center z-10 px-4">
+            <h2 class="text-blue-600 text-3xl md:text-5xl font-extrabold mb-4 drop-shadow-sm">OpenEdu</h2>
+            <h1 class="text-4xl md:text-7xl font-bold text-blue-900 mb-8 tracking-tight">
+                成立于美国本土的<br><span class="text-blue-600">名校咨询团队</span>
+            </h1>
+            
+            <!-- Three Core Features -->
+            <div class="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+                <div class="bg-white/90 p-4 rounded-xl shadow-lg flex flex-col items-center">
+                    <i class="fas fa-rocket text-blue-500 text-2xl mb-2"></i>
+                    <span class="font-bold">一站式</span>
+                </div>
+                <div class="bg-white/90 p-4 rounded-xl shadow-lg flex flex-col items-center border-t-4 border-blue-500">
+                    <i class="fas fa-edit text-blue-500 text-2xl mb-2"></i>
+                    <span class="font-bold">定制化</span>
+                </div>
+                <div class="bg-white/90 p-4 rounded-xl shadow-lg flex flex-col items-center">
+                    <i class="fas fa-heart text-blue-500 text-2xl mb-2"></i>
+                    <span class="font-bold">贴心服务</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center p-8 rounded-2xl bg-blue-50 card-shadow border border-blue-100">
+                <div class="text-4xl font-black text-blue-600 mb-2">100%</div>
+                <div class="text-gray-600 font-bold">Our Tutors</div>
+                <div class="text-sm text-gray-400 uppercase">100%来自美国</div>
+            </div>
+            <div class="text-center p-8 rounded-2xl bg-blue-600 text-white shadow-xl scale-105">
+                <div class="text-4xl font-black mb-2">30</div>
+                <div class="text-blue-100 font-bold">TOP30</div>
+                <div class="text-sm text-blue-200 uppercase">涵盖所有专业</div>
+            </div>
+            <div class="text-center p-8 rounded-2xl bg-blue-50 card-shadow border border-blue-100">
+                <div class="text-4xl font-black text-blue-600 mb-2">63%</div>
+                <div class="text-gray-600 font-bold">藤校导师</div>
+                <div class="text-sm text-gray-400 uppercase">占比63%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Content Section -->
+    <section id="services" class="py-20 bg-gradient-blue">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="inline-block bg-blue-600 text-white px-8 py-2 rounded-full text-xl font-bold mb-12">
+                <i class="fas fa-chevron-circle-right mr-2"></i>一站式服务内容
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Planning -->
+                <div class="bg-white p-6 rounded-2xl card-shadow border-t-4 border-blue-400">
+                    <div class="bg-blue-500 text-white py-2 rounded-lg font-bold mb-6">留学规划</div>
+                    <ul class="space-y-4 text-left">
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> <div><strong>学校排名</strong><p class="text-xs text-gray-500">什么学校适合你？</p></div></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> <div><strong>专业解析</strong><p class="text-xs text-gray-500">解读各专业细分方向</p></div></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> <div><strong>案例数据</strong><p class="text-xs text-gray-500">每年700+案例</p></div></li>
+                    </ul>
+                </div>
+                <!-- Profile -->
+                <div class="bg-white p-6 rounded-2xl card-shadow border-t-4 border-blue-400">
+                    <div class="bg-blue-500 text-white py-2 rounded-lg font-bold mb-6">背景提升</div>
+                    <ul class="space-y-4 text-left">
+                        <li class="flex items-start"><i class="fas fa-flask text-blue-500 mt-1 mr-2"></i> <div><strong>标化考试</strong><p class="text-xs text-gray-500">啥时候考？多少分？</p></div></li>
+                        <li class="flex items-start"><i class="fas fa-flask text-blue-500 mt-1 mr-2"></i> <div><strong>实习科研</strong><p class="text-xs text-gray-500">怎么选？如何做？</p></div></li>
+                        <li class="flex items-start"><i class="fas fa-flask text-blue-500 mt-1 mr-2"></i> <div><strong>海外交流</strong><p class="text-xs text-gray-500">夏校暑研搞定它</p></div></li>
+                    </ul>
+                </div>
+                <!-- Application -->
+                <div class="bg-white p-6 rounded-2xl card-shadow border-t-4 border-blue-400">
+                    <div class="bg-blue-500 text-white py-2 rounded-lg font-bold mb-6">申请递交</div>
+                    <ul class="space-y-4 text-left">
+                        <li class="flex items-start"><i class="fas fa-paper-plane text-blue-500 mt-1 mr-2"></i> <div><strong>头脑风暴</strong><p class="text-xs text-gray-500">深度剖析学生优劣势</p></div></li>
+                        <li class="flex items-start"><i class="fas fa-paper-plane text-blue-500 mt-1 mr-2"></i> <div><strong>选校评估</strong><p class="text-xs text-gray-500">精准定位目标院校</p></div></li>
+                        <li class="flex items-start"><i class="fas fa-paper-plane text-blue-500 mt-1 mr-2"></i> <div><strong>文书网申</strong><p class="text-xs text-gray-500">精细化透明化申请</p></div></li>
+                    </ul>
+                </div>
+                <!-- Post Service -->
+                <div class="bg-white p-6 rounded-2xl card-shadow border-t-4 border-blue-400">
+                    <div class="bg-blue-500 text-white py-2 rounded-lg font-bold mb-6">留学“后”服务</div>
+                    <ul class="space-y-4 text-left">
+                        <li class="flex items-start"><i class="fas fa-graduation-cap text-blue-500 mt-1 mr-2"></i> <div><strong>签证辅导</strong><p class="text-xs text-gray-500">完善材料面签模拟</p></div></li>
+                        <li class="flex items-start"><i class="fas fa-graduation-cap text-blue-500 mt-1 mr-2"></i> <div><strong>行前指导</strong><p class="text-xs text-gray-500">海外衣食住行面面观</p></div></li>
+                        <li class="flex items-start"><i class="fas fa-graduation-cap text-blue-500 mt-1 mr-2"></i> <div><strong>海外求职</strong><p class="text-xs text-gray-500">推荐海外职业项目</p></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <div class="text-2xl font-bold">OpenEdu</div>
+                <div class="text-blue-300 text-sm italic">Open Ivy. Open Offer</div>
+            </div>
+            <div class="text-center text-sm text-blue-200">
+                &copy; 2024 OpenEdu. All Rights Reserved. 成立于美国本土的名校咨询团队.
+            </div>
+            <div class="flex space-x-4 mt-6 md:mt-0 text-xl">
+                <i class="fab fa-weixin cursor-pointer hover:text-blue-400"></i>
+                <i class="fab fa-instagram cursor-pointer hover:text-blue-400"></i>
+                <i class="fab fa-linkedin cursor-pointer hover:text-blue-400"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
