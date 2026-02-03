@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 font-body antialiased;
+}
+
+.glass-panel {
+  @apply bg-white/70 dark:bg-slate-900/60 backdrop-blur-md border border-white/60 dark:border-white/10 shadow-soft;
+}
+
+.section-wrapper {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.nav-link {
+  @apply text-sm font-medium text-slate-600 dark:text-slate-200 hover:text-skyBlue transition-colors cursor-pointer;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-skyBlue px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:shadow-lg hover:bg-sky-500 transition-all;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center rounded-full border border-slate-200/70 dark:border-slate-700 px-4 py-2 text-xs font-medium text-slate-600 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors;
+}
+
+.sticky-nav-dot {
+  @apply w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600 transition-all;
+}
+
+.sticky-nav-dot-active {
+  @apply w-5 bg-skyBlue;
+}
+
