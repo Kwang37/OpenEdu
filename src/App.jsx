@@ -1020,13 +1020,13 @@ const ConsultationModal = ({ open, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-40 flex items-start md:items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div className="fixed inset-0 z-40 flex items-start md:items-center justify-center p-3 sm:p-4 overflow-y-auto">
       {/* 背景遮罩 */}
       <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" />
 
       {/* 表单主体 */}
-      <div className="relative w-full max-w-xl my-auto bg-white rounded-[1.5rem] md:rounded-[2rem] shadow-2xl overflow-hidden flex flex-col max-h-[95vh] animate-in fade-in zoom-in duration-300">
-        <div className="h-1.5 w-full bg-gradient-to-r from-sky-600 to-indigo-500 shrink-0" />
+      <div className="relative w-full max-w-lg my-auto bg-white rounded-[1.25rem] md:rounded-[1.75rem] shadow-2xl overflow-hidden flex flex-col max-h-[92vh] animate-in fade-in zoom-in duration-300">
+        <div className="h-1.5 w-full bg-skyBlue shrink-0" />
 
         <button
           onClick={onClose}
@@ -1037,7 +1037,7 @@ const ConsultationModal = ({ open, onClose }) => {
         </button>
 
         {!submitted ? (
-          <div className="overflow-y-auto p-6 md:p-10 custom-scrollbar">
+          <div className="overflow-y-auto p-5 md:p-8 custom-scrollbar">
             <form className="space-y-6 text-xs md:text-sm" onSubmit={handleSubmit}>
               <div className="text-center mb-2">
               <h2 className="text-2xl md:text-3xl font-heading font-bold text-slate-900 mb-3 tracking-tight">
