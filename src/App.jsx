@@ -1025,7 +1025,7 @@ const ConsultationModal = ({ open, onClose }) => {
       <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" />
 
       {/* 表单主体 */}
-      <div className="relative w-full max-w-lg my-auto bg-white rounded-[1.25rem] md:rounded-[1.75rem] shadow-2xl overflow-hidden flex flex-col max-h-[92vh] animate-in fade-in zoom-in duration-300">
+      <div className="relative w-full max-w-md my-auto bg-white rounded-[1.25rem] md:rounded-[1.75rem] shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-in fade-in zoom-in duration-300">
         <div className="h-1.5 w-full bg-skyBlue shrink-0" />
 
         <button
@@ -1450,11 +1450,11 @@ const App = () => {
               transition={{ duration: 0.8, delay: 0.05 }}
               className="mb-8"
             >
-              <h1 className="flex flex-col gap-2">
-                <span className="text-xl md:text-3xl font-light text-sky-100/80 tracking-[0.2em]">
+              <h1 className="flex flex-col gap-1.5">
+                <span className="text-lg md:text-3xl font-light text-sky-100/80 tracking-[0.2em]">
                   成立于美国本土的
                 </span>
-                <span className="font-heading text-5xl md:text-8xl font-bold text-white tracking-tight leading-tight drop-shadow-2xl">
+                <span className="font-heading text-4xl md:text-7xl font-bold text-white tracking-tight leading-tight drop-shadow-2xl">
                   名校咨询团队
                 </span>
               </h1>
