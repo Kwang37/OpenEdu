@@ -5,12 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        skyBlue: "#007AFF",
+        skyBlue: "#1E40AF",
         deepNavy: "#013B81"
       },
       fontFamily: {
-        heading: ['"Microsoft YaHei", "Noto Sans SC", system-ui, -apple-system', "sans-serif"],
-        body: ['"Noto Sans SC", system-ui, -apple-system', "sans-serif"]
+        heading: ['"Crimson Pro", "Microsoft YaHei", "Noto Sans SC", serif'],
+        body: ['"Work Sans", "Noto Sans SC", system-ui, -apple-system', "sans-serif"]
       },
       boxShadow: {
         soft: "0 18px 45px rgba(15, 23, 42, 0.12)"
