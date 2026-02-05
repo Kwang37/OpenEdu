@@ -1020,36 +1020,33 @@ const ConsultationModal = ({ open, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-40 flex items-start md:items-center justify-center p-3 sm:p-4 overflow-y-auto">
-      {/* 背景遮罩 */}
-      <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" />
-
-      {/* 表单主体 */}
-      <div className="relative w-full max-w-md my-auto bg-white rounded-[1.25rem] md:rounded-[1.75rem] shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-in fade-in zoom-in duration-300">
+    <div className="fixed inset-0 z-40 flex items-center justify-center p-4 sm:p-5 md:p-6 bg-slate-900/60 backdrop-blur-sm">
+      {/* 表单主体：自适应不同尺寸，整体略缩小 */}
+      <div className="relative w-full max-w-[92vw] sm:max-w-lg md:max-w-xl lg:max-w-2xl max-h-[88vh] sm:max-h-[90vh] bg-white rounded-[1.75rem] md:rounded-[2rem] shadow-2xl flex flex-col overflow-hidden">
         <div className="h-1.5 w-full bg-skyBlue shrink-0" />
 
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 text-slate-300 hover:text-slate-600 transition-colors"
+          className="absolute top-6 right-8 z-20 text-slate-300 hover:text-slate-600 transition-colors"
           aria-label="关闭咨询表单"
         >
           <X className="w-5 h-5" />
         </button>
 
         {!submitted ? (
-          <div className="overflow-y-auto p-5 md:p-8 custom-scrollbar">
-            <form className="space-y-6 text-xs md:text-sm" onSubmit={handleSubmit}>
-              <div className="text-center mb-2">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-slate-900 mb-3 tracking-tight">
-                在线咨询 · 预约初步规划
-              </h2>
-              <p className="text-slate-500 text-sm font-light">
-                留下你的信息，OpenEdu 专家团队将在{" "}
-                <span className="text-skyBlue font-medium">24 小时内</span> 与你取得联系。
-              </p>
-            </div>
+          <div className="flex-1 overflow-y-auto p-6 sm:p-8 md:p-10 custom-scrollbar">
+            <form className="space-y-6" onSubmit={handleSubmit}>
+              <div className="text-center mb-10">
+                <h2 className="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mb-3 tracking-tight">
+                  在线咨询 · 预约初步规划
+                </h2>
+                <p className="text-slate-500 text-sm font-light">
+                  留下你的信息，OpenEdu 专家团队将在{" "}
+                  <span className="text-skyBlue font-medium">24 小时内</span> 与你取得联系。
+                </p>
+              </div>
 
-              <div className="space-y-5">
+              <div className="space-y-6">
                 <div>
                   <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">
                     学生姓名 / Student Name
@@ -1058,11 +1055,11 @@ const ConsultationModal = ({ open, onClose }) => {
                     required
                     name="name"
                     placeholder="例如：张同学"
-                    className="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-skyBlue/20 focus:border-skyBlue transition-all text-slate-700"
+                    className="w-full px-5 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-skyBlue/20 focus:border-skyBlue transition-all text-slate-700"
                   />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">
                       当前年级
@@ -1070,7 +1067,7 @@ const ConsultationModal = ({ open, onClose }) => {
                     <input
                       name="grade"
                       placeholder="如：高二 / 大一"
-                      className="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-skyBlue/20 focus:border-skyBlue transition-all"
+                      className="w-full px-5 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-skyBlue/20 focus:border-skyBlue transition-all"
                     />
                   </div>
                   <div>
@@ -1079,7 +1076,7 @@ const ConsultationModal = ({ open, onClose }) => {
                     </label>
                     <select
                       name="target"
-                      className="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-skyBlue/20 focus:border-skyBlue transition-all appearance-none"
+                      className="w-full px-5 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-skyBlue/20 focus:border-skyBlue transition-all appearance-none"
                     >
                       <option>美国高中</option>
                       <option>美国本科</option>
@@ -1098,7 +1095,7 @@ const ConsultationModal = ({ open, onClose }) => {
                     required
                     name="contact"
                     placeholder="我们将通过此方式与您联系"
-                    className="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-skyBlue/20 focus:border-skyBlue transition-all"
+                    className="w-full px-5 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-skyBlue/20 focus:border-skyBlue transition-all"
                   />
                 </div>
 
@@ -1107,23 +1104,23 @@ const ConsultationModal = ({ open, onClose }) => {
                     背景与需求 (选填)
                   </label>
                   <textarea
-                    rows={3}
+                    rows={4}
                     name="message"
-                    placeholder="例如：目前 GPA / 已有标化成绩 / 目标专业和学校 / 特殊情况等"
-                    className="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-skyBlue/20 focus:border-skyBlue transition-all resize-none"
+                    placeholder="例如：目前 GPA / 已有标化成绩 / 目标专业和学校等"
+                    className="w-full px-5 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-skyBlue/20 focus:border-skyBlue transition-all resize-none"
                   />
                 </div>
               </div>
 
-              <div className="mt-8">
+              <div className="pt-4 pb-2">
                 <button
                   type="submit"
-                  className="w-full py-4 bg-skyBlue hover:bg-sky-700 text-white rounded-xl font-bold shadow-xl shadow-skyBlue/30 transition-all flex items-center justify-center gap-3 group text-sm md:text-base"
+                  className="w-full py-5 bg-skyBlue hover:bg-sky-700 text-white rounded-2xl font-bold text-lg shadow-xl shadow-skyBlue/20 transition-all flex items-center justify-center gap-3 group"
                 >
                   <span>提交咨询请求</span>
-                  <ArrowRight className="w-4 h-4 opacity-60 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform" />
+                  <ArrowRight className="w-4 h-4 opacity-70 group-hover:translate-x-1 transition-transform" />
                 </button>
-                <p className="text-center text-[10px] text-slate-400 mt-4 italic">
+                <p className="text-center text-[10px] text-slate-400 mt-6 italic">
                   信息仅用于 OpenEdu 顾问与您沟通，我们将严格保护您的个人隐私。
                 </p>
               </div>
