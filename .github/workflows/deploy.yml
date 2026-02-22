@@ -27,11 +27,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Add CNAME for custom domain
-        run: cp CNAME dist/
-
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          cname: openeduinc.com
