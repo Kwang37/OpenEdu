@@ -3332,11 +3332,11 @@ const App = () => {
                     </li>
                     <li className="flex items-center gap-3">
                       <Phone className="w-4 h-4" />
-                      <span>+1 (000) 000-0000</span>
+                      <a href="tel:+12408543064" className="hover:text-sky-300 transition-colors">+1 (240) 854-3064</a>
                     </li>
                     <li className="flex items-center gap-3">
                       <Mail className="w-4 h-4" />
-                      <span>contact@openedu.com</span>
+                      <a href="mailto:contactus@openeduinc.com" className="hover:text-sky-300 transition-colors">contactus@openeduinc.com</a>
                     </li>
                   </ul>
                 </div>
