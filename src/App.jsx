@@ -37,6 +37,53 @@ import {
   Phone
 } from "lucide-react";
 
+const Logo = ({ variant = "light", size = "md" }) => {
+  const isLight = variant === "light";
+  const isSm = size === "sm";
+  const primary = isLight ? "#1B2E4A" : "#fff";
+  const secondary = isLight ? "#3D5A80" : "rgba(255,255,255,0.7)";
+  const brandOpenClass = isLight ? "text-[#1B2E4A]" : "text-white";
+  const brandEduClass = isLight ? "text-[#3D5A80]" : "text-white/70";
+  const taglineClass = isLight ? "text-[#3D5A80]" : "text-white/50";
+
+  const iconSize = isSm ? 32 : 44;
+  const brandSize = isSm ? "text-xs" : "text-base";
+  const taglineSize = isSm ? "text-[9px]" : "text-[10px]";
+
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <div className="relative flex flex-col items-center">
+        <div className="flex flex-col items-center">
+          <div className={isSm ? "mb-1" : "mb-1.5"}>
+            <svg width={iconSize} height={iconSize} viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="55" cy="55" r="48" stroke={primary} strokeWidth="3" fill="none" opacity="0.95" />
+              <circle cx="55" cy="55" r="41" stroke={primary} strokeWidth="0.5" fill="none" opacity="0.2" />
+              <polygon points="55,22 82,34 55,46 28,34" fill={primary} opacity="0.95" />
+              <polygon points="55,46 75,37 75,54 55,63" fill={primary} opacity="0.55" />
+              <polygon points="55,46 35,37 35,54 55,63" fill={primary} opacity="0.75" />
+              <polygon points="55,46 75,37 55,28 35,37" fill={primary} opacity="0" />
+              <line x1="82" y1="34" x2="82" y2="56" stroke={secondary} strokeWidth="1.5" opacity="0.9" />
+              <circle cx="82" cy="59" r="3.5" fill={secondary} opacity="0.9" />
+              <line x1="79" y1="59" x2="76" y2="67" stroke={secondary} strokeWidth="1" opacity="0.7" />
+              <line x1="82" y1="62" x2="82" y2="70" stroke={secondary} strokeWidth="1" opacity="0.7" />
+              <line x1="85" y1="59" x2="88" y2="67" stroke={secondary} strokeWidth="1" opacity="0.7" />
+              <path d="M55 95 L55 72" stroke={primary} strokeWidth="1.5" opacity="0.35" strokeDasharray="3 3" />
+              <polygon points="55,68 51,75 59,75" fill={primary} opacity="0.35" />
+            </svg>
+          </div>
+          <div className={`flex items-baseline gap-px ${isSm ? "mb-0" : "mb-0.5"}`}>
+            <span className={`font-cinzel ${brandSize} font-medium tracking-[0.2em] ${brandOpenClass}`}>OPEN</span>
+            <span className={`font-cinzel ${brandSize} font-normal tracking-[0.2em] ${brandEduClass}`}>EDU</span>
+          </div>
+          <div className={`font-cormorant ${taglineSize} italic font-light tracking-widest ${taglineClass}`}>
+            Open Ivy · Open Offer
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const SERVICE_TABS = [
   {
     key: "planning",
@@ -1265,19 +1312,8 @@ const App = () => {
       <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
         <div className="section-wrapper h-20 flex items-center justify-between">
           <div className="flex items-center gap-3 sm:gap-4">
-            <div className="relative w-12 h-12 bg-deepNavy rounded-[1.1rem] flex flex-col items-center justify-center shadow-soft overflow-hidden flex-shrink-0">
-              <div className="absolute top-0 w-full h-1.5 bg-[#007AFF]" />
-              <span className="text-white font-heading text-xl font-bold mt-1 leading-none">
-                OE
-              </span>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-2xl font-heading font-bold text-slate-800 tracking-tight leading-none">
-                OpenEdu
-              </span>
-              <span className="mt-1.5 text-[9px] uppercase tracking-[0.15em] text-skyBlue font-bold">
-                Open Ivy. Open Offer.
-              </span>
+            <div className="flex-shrink-0" aria-label="OpenEdu">
+              <Logo variant="light" size="sm" />
             </div>
           </div>
 
@@ -3254,15 +3290,9 @@ const App = () => {
               <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
                 <div className="md:col-span-4">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="relative w-12 h-12 bg-deepNavy rounded-[1.1rem] flex flex-col items-center justify-center shadow-soft overflow-hidden flex-shrink-0">
-                      <div className="absolute top-0 w-full h-1.5 bg-[#007AFF]" />
-                      <span className="text-white font-heading text-xl font-bold mt-1 leading-none">
-                        OE
-                      </span>
+                    <div className="flex-shrink-0" aria-label="OpenEdu">
+                      <Logo variant="dark" />
                     </div>
-                    <span className="text-2xl font-heading font-bold tracking-tight">
-                      OpenEdu
-                    </span>
                   </div>
                   <p className="text-slate-400 text-sm leading-relaxed mb-6">
                     OpenEdu 是面向常春藤及美国 TOP 名校的顶级留学咨询品牌，致力于通过本土化视野与数据驱动，为学生提供规划、申请与发展的一体化解决方案。
