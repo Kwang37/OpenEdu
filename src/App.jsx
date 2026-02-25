@@ -2097,7 +2097,7 @@ const App = () => {
                   <div className="p-6 md:p-8">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="font-heading text-2xl font-bold text-slate-800">
-                        {tutor.name} · <span className="text-slate-600 font-normal">{tutor.nameEn}</span>
+                        {tutor.nameEn}
                       </h3>
                       {hasIvy && (
                         <span className={`px-2 py-0.5 ${theme.pillBg} ${theme.pillText} text-[10px] font-bold rounded`}>
