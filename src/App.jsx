@@ -152,6 +152,7 @@ const TUTORS = [
   {
     id: 1,
     name: "S导师",
+    nameEn: "Sarah",
     title: "前常春藤盟校招生官",
     institution: "Ivy League University",
     tags: ["藤校背景", "前招生官", "文书大牛", "教育学博士"],
@@ -165,6 +166,7 @@ const TUTORS = [
   {
     id: 2,
     name: "M导师",
+    nameEn: "Michael",
     title: "顶级科技公司资深工程师",
     institution: "Stanford University",
     tags: ["斯坦福校友", "CS专业专家", "大厂内推", "技术面试"],
@@ -178,6 +180,7 @@ const TUTORS = [
   {
     id: 3,
     name: "W导师",
+    nameEn: "William",
     title: "华尔街顶级投行执行董事",
     institution: "Wharton School",
     tags: ["沃顿商学院", "金融精英", "投行经验", "CFA持证"],
@@ -191,6 +194,7 @@ const TUTORS = [
   {
     id: 4,
     name: "L导师",
+    nameEn: "Lucy",
     title: "执业移民律师",
     institution: "Harvard Law School",
     tags: ["哈佛法学院", "签证专家", "H-1B律师", "绿卡规划"],
@@ -204,6 +208,7 @@ const TUTORS = [
   {
     id: 5,
     name: "J导师",
+    nameEn: "James",
     title: "MBB前咨询顾问",
     institution: "MIT Sloan",
     tags: ["MIT校友", "咨询精英", "Case面试", "商业分析"],
@@ -217,6 +222,7 @@ const TUTORS = [
   {
     id: 6,
     name: "K导师",
+    nameEn: "Kevin",
     title: "顶级科技公司产品经理",
     institution: "UC Berkeley",
     tags: ["伯克利校友", "PM专家", "产品设计", "用户体验"],
@@ -230,6 +236,7 @@ const TUTORS = [
   {
     id: 7,
     name: "M博士",
+    nameEn: "Matthew",
     title: "顶尖医学院终身教授",
     institution: "Top Medical School",
     tags: ["医学专家", "公共卫生", "博士申请", "学术写作"],
@@ -243,6 +250,7 @@ const TUTORS = [
   {
     id: 8,
     name: "R导师",
+    nameEn: "Ryan",
     title: "大型科技公司数据科学家",
     institution: "Carnegie Mellon",
     tags: ["CMU校友", "数据科学", "机器学习", "A/B测试"],
@@ -256,6 +264,7 @@ const TUTORS = [
   {
     id: 9,
     name: "K2导师",
+    nameEn: "Kate",
     title: "四大会计师事务所资深经理",
     institution: "Duke University",
     tags: ["杜克校友", "四大经验", "审计咨询", "CPA认证"],
@@ -269,6 +278,7 @@ const TUTORS = [
   {
     id: 10,
     name: "W博士",
+    nameEn: "Wendy",
     title: "常春藤盟校研究员",
     institution: "Ivy League University",
     tags: ["藤校博士", "科研指导", "文书润色", "PhD申请"],
@@ -282,6 +292,7 @@ const TUTORS = [
   {
     id: 11,
     name: "H导师",
+    nameEn: "Helen",
     title: "华尔街投行副总裁",
     institution: "NYU Stern",
     tags: ["纽约大学", "投资银行", "估值建模", "并购交易"],
@@ -295,6 +306,7 @@ const TUTORS = [
   {
     id: 12,
     name: "P导师",
+    nameEn: "Peter",
     title: "顶级科技公司首席工程师",
     institution: "University of Washington",
     tags: ["华大校友", "云计算专家", "系统架构", "云平台认证"],
@@ -308,6 +320,7 @@ const TUTORS = [
   {
     id: 13,
     name: "G博士",
+    nameEn: "Grace",
     title: "藤校教育学院副教授",
     institution: "Ivy League University",
     tags: ["藤校教授", "教育心理学", "申请策略", "职业规划"],
@@ -321,6 +334,7 @@ const TUTORS = [
   {
     id: 14,
     name: "C导师",
+    nameEn: "Claire",
     title: "知名科技公司产品总监",
     institution: "Stanford GSB",
     tags: ["斯坦福商学院", "产品战略", "增长黑客", "创业经验"],
@@ -334,6 +348,7 @@ const TUTORS = [
   {
     id: 15,
     name: "R2导师",
+    nameEn: "Rachel",
     title: "MBB战略咨询经理",
     institution: "Northwestern Kellogg",
     tags: ["凯洛格商学院", "战略咨询", "市场分析", "商业策略"],
@@ -347,6 +362,7 @@ const TUTORS = [
   {
     id: 16,
     name: "D导师",
+    nameEn: "David",
     title: "顶级科技公司高级设计师",
     institution: "Rhode Island School of Design",
     tags: ["RISD校友", "UX/UI设计", "产品设计", "交互设计"],
@@ -360,6 +376,7 @@ const TUTORS = [
   {
     id: 17,
     name: "Z博士",
+    nameEn: "Zoe",
     title: "藤校经济学访问学者",
     institution: "Ivy League University",
     tags: ["藤校背景", "经济学家", "量化分析", "研究方法"],
@@ -373,6 +390,7 @@ const TUTORS = [
   {
     id: 18,
     name: "A导师",
+    nameEn: "Alex",
     title: "企业级SaaS解决方案架构师",
     institution: "Georgia Tech",
     tags: ["佐治亚理工", "SaaS专家", "企业软件", "云平台"],
@@ -386,6 +404,7 @@ const TUTORS = [
   {
     id: 19,
     name: "L2导师",
+    nameEn: "Linda",
     title: "四大税务合伙人",
     institution: "USC Marshall",
     tags: ["南加大校友", "税务专家", "四大合伙人", "国际税法"],
@@ -399,6 +418,7 @@ const TUTORS = [
   {
     id: 20,
     name: "T导师",
+    nameEn: "Thomas",
     title: "知名招聘平台人才主管",
     institution: "Cornell University",
     tags: ["康奈尔校友", "HR专家", "招聘策略", "职业发展"],
@@ -2077,7 +2097,7 @@ const App = () => {
                   <div className="p-6 md:p-8">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="font-heading text-2xl font-bold text-slate-800">
-                        {tutor.name}
+                        {tutor.name} · <span className="text-slate-600 font-normal">{tutor.nameEn}</span>
                       </h3>
                       {hasIvy && (
                         <span className={`px-2 py-0.5 ${theme.pillBg} ${theme.pillText} text-[10px] font-bold rounded`}>
