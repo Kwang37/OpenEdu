@@ -3205,6 +3205,11 @@ const App = () => {
                       </span>{" "}
                       的方式，通过深度挖掘每位学生的独特性，打破信息差。在 OpenEdu，我们不仅关注当下的申请结果，更致力于培养独立思考、批判性表达及全球化视野。
                     </p>
+                    <p>
+                      除留学申请外，我们还提供{" "}
+                      <strong className="text-slate-900 font-bold">海外求职计划</strong>
+                      ，由美国本土导师助力学生在 OPT、H-1B 阶段顺利进入顶级企业，涵盖科技、金融、咨询等行业求职辅导与内推资源。
+                    </p>
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-6">
